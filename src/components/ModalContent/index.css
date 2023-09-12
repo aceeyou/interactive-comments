@@ -1,0 +1,44 @@
+.modal-content {
+  background-color: var(--White);
+  width: 90%;
+  max-width: 345px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  margin: auto;
+}
+
+.modal-title {
+  font-size: 1.18rem;
+}
+
+.modal-message {
+  margin: 15px 0 10px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: var(--Grayish-Blue);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.buttons button.affirmative,
+.buttons button.negative {
+  padding: 12px 20px;
+  border-radius: 4px;
+  color: var(--White);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+button.affirmative {
+  background-color: var(--Soft-Red);
+}
+
+button.negative {
+  background-color: var(--Grayish-Blue);
+}

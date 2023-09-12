@@ -1,0 +1,158 @@
+.comment-item {
+  background-color: var(--White);
+  padding: 15px;
+  padding-right: 25px;
+  border-radius: 10px;
+  margin-bottom: 0.875rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, max-content);
+  row-gap: 1ch;
+  gap: 0;
+  position: relative;
+}
+
+.comment-item .post-description-container {
+  grid-area: 1 / 1 / 1 / 5;
+}
+
+.comment-item .post-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.post-description img.createdBy__img {
+  width: 33px;
+  aspect-ratio: 1;
+}
+
+.createdBy__name {
+  margin-left: 15px;
+}
+
+.you-container {
+  color: var(--White);
+  padding: 1px 5px 3px;
+  vertical-align: middle;
+  line-height: 1;
+  background-color: var(--Moderate-blue);
+  border-radius: 2px;
+}
+
+.you {
+  font-size: 0.75rem;
+}
+
+.createdBy__post-time {
+  font-size: 1rem;
+}
+
+.you-container {
+  margin-left: 8px;
+}
+
+.createdBy__post-time {
+  margin-left: 16px;
+}
+
+.content {
+  /* max-width: 90%; */
+  margin: 15px 0;
+  margin-left: 10px;
+  grid-area: 2/ 1 / 2 / 5;
+}
+
+.content p {
+  color: var(--Grayish-Blue);
+  line-height: 1.5;
+}
+
+.comment-controls-container {
+  display: flex;
+  justify-content: flex-end;
+  grid-area: 3 / 4;
+}
+
+button.delete-btn,
+button.edit-btn {
+  height: min-content;
+  background-color: transparent;
+  font-weight: 600;
+  padding-right: 0;
+}
+
+button.delete-btn {
+  color: var(--Soft-Red);
+}
+
+button.edit-btn {
+  color: var(--Moderate-blue);
+  margin-left: 5px;
+}
+
+button.update-btn {
+  background-color: var(--Moderate-blue);
+  color: var(--White);
+  margin-left: auto;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 10px 15px;
+  margin-top: 12px;
+}
+
+.input__edit-content {
+  resize: none;
+  height: max-content;
+  display: block;
+  width: 100%;
+  border-color: var(--Light-gray);
+  border-radius: 5px;
+  padding: 14px 20px;
+  font-family: var(--font-family);
+  outline: none;
+}
+
+button.delete-btn:hover,
+button.edit-btn:hover {
+  opacity: 0.5;
+}
+
+.comment-controls-container button:first-of-type {
+  margin-left: auto;
+}
+
+.btn-icon {
+  transform: translateY(-2px);
+  margin-right: 8px;
+}
+
+.replying-to {
+  color: var(--Moderate-blue);
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 650px) {
+  .comment-item {
+    grid-template-columns: 55px repeat(4, 1fr);
+    grid-template-rows: repeat(2, max-content);
+    row-gap: 10px;
+  }
+
+  .comment-item .post-description-container {
+    grid-area: 1 / 2 / 1 / 5;
+    margin-left: 10px;
+  }
+
+  .content {
+    margin: 0;
+    margin-left: 10px;
+    grid-area: 2 / 2 / 2 / span 5;
+  }
+
+  .comment-controls-container {
+    grid-area: 1 / 5;
+  }
+}

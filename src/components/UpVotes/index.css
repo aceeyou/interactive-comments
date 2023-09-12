@@ -1,0 +1,65 @@
+.upvotes-container {
+  /* position: absolute; */
+  grid-area: 3 / 1;
+  background-color: var(--Light-gray);
+  border-radius: 13px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+  height: max-content;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px;
+  background-color: var(--Light-gray);
+}
+
+.upvote-btn {
+  padding: 12px 8px 12px 14px;
+}
+
+.downvote-btn {
+  padding: 12px 14px 12px 8px;
+}
+
+.upvote-count {
+  color: var(--Moderate-blue);
+  background-color: var(--Light-gray);
+
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.125rem;
+  width: 30px;
+}
+
+.upvote-btn img,
+.downvote-btn img {
+  width: 12px;
+}
+@media only screen and (min-width: 650px) {
+  .upvotes-container {
+    grid-area: 1 / 1 / 3;
+    flex-direction: column;
+  }
+
+  .upvote-count {
+    padding: 5px 0;
+  }
+
+  button.button {
+    padding: 12px 15px 14px;
+  }
+
+  .upvote-btn {
+    padding: 12px 12px 8px 12px;
+  }
+
+  .downvote-btn {
+    padding: 12px 14px 12px 8px;
+  }
+}

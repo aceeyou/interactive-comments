@@ -199,7 +199,7 @@ export default function Main() {
                         onPostComment={handleAddComment}
                         reply={true}
                         onPostReply={handlePostReply}
-                        commentID={reply.id}
+                        commentID={comment.id}
                         replyingTo={reply.user.username}
                       />
                     )}
